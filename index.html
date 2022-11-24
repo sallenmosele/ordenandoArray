@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando números com Array pela linguagem Javascript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWav56rSmL1dC3R/AZzGRnGxQQKnkkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <script>
+
+var numeros = [10,9,8,7,6,4,5,3,1,2];
+
+numeros.sort(ordenacao);
+
+function ordenacao(a, b){
+    return a - b;
+}
+
+//Para alterar da ordem crescente para decrescente, basta alterar no function o b para a;
+
+for(var i = 0; i < numeros.length; i++){
+    document.write(numeros[i] + '<br>');
+}
+
+</script> 
+</div>  
+</body>
+</html>
